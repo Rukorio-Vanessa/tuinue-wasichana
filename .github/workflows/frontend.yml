@@ -1,5 +1,11 @@
 name: "frontend-ci-cd"
 on:
+   pull_request:
+      branches: ["main"]
+      paths:
+      - "frontend/**"
+   
+     
    push:
      branches: ["main"]
      paths:
